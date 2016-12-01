@@ -1,8 +1,8 @@
 using Nancy;
 using System.Collections.Generic;
-using NameSpace.Objects;
+using ScrabbleScore.Objects;
 
-namespace NameSpace
+namespace ScrabbleScore
 {
 	public class HomeModule : NancyModule
 	{

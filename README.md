@@ -2,28 +2,27 @@
 
 #### Description, Date.
 
-#### By **Steve Burton**
+#### By **Steve Burton, Anne Belka**
 
 ### Specifications
-List project requirements.
 
-These are the steps I'll take to write my code:
+These are the steps we'll take to write our code:
 
-This is the first test.
-* Input: XXXX
-* Output: XXXX
+If user enters a single letter return accurate score.
+* Input: a
+* Output: 1
 
-This is the second test.
-* Input: XXXX
-* Output: XXXX
+If the user enters either a capital or lowercase letter, return the accurate score.
+* Input: A
+* Output: 1
 
-This is the third test.
-* Input: XXXX
-* Output: XXXX
+If a user enters a non-letter, return, "Please enter a word".
+* Input: "/"
+* Output: "Please enter a word"
 
-This is the fourth test.
-* Input: XXXX
-* Output: XXXX
+If the user enters a word, return the accurate score.
+* Input: Zygote
+* Output: 19
 
 
 ## Setup/Installation Requirements
@@ -34,20 +33,10 @@ This is the fourth test.
 * Use the command > dnx kestrel to run the project on the local server.
 * Navigate to localhost:5004 in your browser to view the app
 
-## Known Bugs
 
-None.
-
-## Support and contact details
-
-You can contact me on Github at steve-burton.
-
-## Technologies Used
-
-HTML, CSS, Bootstrap, C#
 
 ### License
 
 GPL
 
-Copyright (c) 2016 **_Steve Burton_**
+Copyright (c) 2016 **_Steve Burton, Anne Belka_**
