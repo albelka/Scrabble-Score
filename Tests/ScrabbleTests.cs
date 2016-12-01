@@ -26,5 +26,12 @@ namespace ScrabbleScore.Objects
       Scrabble newScrabble = new Scrabble(userWord);
       Assert.Equal(0, newScrabble.ScoreIs());
     }
+    [Fact]
+    public void ScoreIs_WholeWord_score()
+    {
+      string userWord = "Zygote";
+      Scrabble newScrabble = new Scrabble(userWord);
+      Assert.Equal(19, newScrabble.ScoreIs());
+    }
   }
 }
