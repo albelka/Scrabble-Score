@@ -13,32 +13,34 @@ namespace ScrabbleScore.Objects
 
 		public int ScoreIs()
 		{
+			string cleanWord = this.UserWord.ToLower();
+
 			int count = 0;
-			if(this.UserWord == "a" || this.UserWord =="e" ||this.UserWord == "i" || this.UserWord =="o" || this.UserWord =="u" || this.UserWord =="l" || this.UserWord =="n" || this.UserWord =="r" || this.UserWord =="s" || this.UserWord =="t")
+			if(cleanWord == "a" || cleanWord =="e" ||cleanWord == "i" || cleanWord =="o" || cleanWord =="u" || cleanWord =="l" || cleanWord =="n" || cleanWord =="r" || cleanWord =="s" || cleanWord =="t")
 			{
 				count ++;
 				return count;
-			}else if (this.UserWord == "d"|| this.UserWord =="g")
+			}else if (cleanWord == "d"|| cleanWord =="g")
 			{
 				count = count + 2;
 				return count;
-			}else if (this.UserWord =="b"|| this.UserWord =="c" || this.UserWord =="m" || this.UserWord =="p")
+			}else if (cleanWord =="b"|| cleanWord =="c" || cleanWord =="m" || cleanWord =="p")
 			{
 				count = count + 3;
 				return count;
-			}else if(this.UserWord =="f" || this.UserWord =="h" || this.UserWord =="v" || this.UserWord == "w" || this.UserWord == "y")
+			}else if(cleanWord =="f" || cleanWord =="h" || cleanWord =="v" || cleanWord == "w" || cleanWord == "y")
 			{
 				count = count + 4;
 				return count;
-			}else if (this.UserWord =="k")
+			}else if (cleanWord =="k")
 			{
 				count+=5;
 				return count;
-			}else if (this.UserWord =="j" || this.UserWord =="x")
+			}else if (cleanWord =="j" || cleanWord =="x")
 			{
 				count+=8;
 				return count;
-			}else if (this.UserWord =="q" || this.UserWord =="z")
+			}else if (cleanWord =="q" || cleanWord =="z")
 			{
 				count+=10;
 				return count;

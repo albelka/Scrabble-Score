@@ -10,7 +10,14 @@ namespace ScrabbleScore.Objects
       string userWord = "a";
       Scrabble newScrabble = new Scrabble(userWord);
       //UserInput newInput = new UserInput();
-      Assert.Equal(10, newScrabble.ScoreIs());
+      Assert.Equal(1, newScrabble.ScoreIs());
+    }
+    [Fact]
+    public void ScoreIs_CaseSensitiveScore_score()
+    {
+      string userWord = "A";
+      Scrabble newScrabble = new Scrabble(userWord);
+      Assert.Equal(1, newScrabble.ScoreIs());
     }
   }
 }
