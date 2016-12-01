@@ -19,5 +19,12 @@ namespace ScrabbleScore.Objects
       Scrabble newScrabble = new Scrabble(userWord);
       Assert.Equal(1, newScrabble.ScoreIs());
     }
+    [Fact]
+    public void ScoreIs_NotALetter_score()
+    {
+      string userWord = "?";
+      Scrabble newScrabble = new Scrabble(userWord);
+      Assert.Equal(0, newScrabble.ScoreIs());
+    }
   }
 }

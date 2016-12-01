@@ -46,7 +46,7 @@ namespace ScrabbleScore.Objects
 				return count;
 			}else
 			{
-				return 0;
+				return count;
 			}
 		}
 	}

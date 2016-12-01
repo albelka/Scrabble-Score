@@ -18,7 +18,7 @@ If the user enters either a capital or lowercase letter, return the accurate sco
 
 If a user enters a non-letter, return, "Please enter a word".
 * Input: "/"
-* Output: "Please enter a word"
+* Output: 0
 
 If the user enters a word, return the accurate score.
 * Input: Zygote
